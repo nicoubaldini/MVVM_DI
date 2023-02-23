@@ -1,0 +1,1 @@
+C:\Users\ubald\source\repos\MVVM_DI\MVVM_DI\MVVM_DI.csproj;x64
