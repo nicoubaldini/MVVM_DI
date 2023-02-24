@@ -18,10 +18,10 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-		builder.Services.AddScoped<FileListView>();
-		builder.Services.AddScoped<FileListViewModel>();
-        builder.Services.AddScoped<FileDetailView>();
-        builder.Services.AddScoped<FileDetailViewModel>();
+		builder.Services.AddTransient<FileListView>();
+		builder.Services.AddTransient<FileListViewModel>();
+        builder.Services.AddTransient<FileDetailView>();
+        builder.Services.AddTransient<FileDetailViewModel>();
         builder.Services.AddSingleton<INavigationService, NavigationService>();
         builder.Services.AddSingleton<IFileService, FileService>();
 

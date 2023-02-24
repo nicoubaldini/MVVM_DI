@@ -3,21 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MVVM_DI.Views.FileListView"
              Title="FileListView">
-    <ScrollView>
-        <VerticalStackLayout>
-
-
-                <Frame BorderColor="Gray"
-                    CornerRadius="10">
-                    <Label Text="Frame wrapped around a Label" />
-                    
-            </Frame>
-            <Button
-                        x:Name="boton"
+    <!--
+                <Button
                         IsEnabled="True"
                         Text="Click me"
                         Command="{Binding NavigateCommand}"
                         HorizontalOptions="Center"/>
+    -->
+    <ScrollView>
+        <VerticalStackLayout>
+            <Button IsEnabled="True"
+                Text="Click me"
+                Command="{Binding NavigateCommand}"
+                HorizontalOptions="Center"/>
         </VerticalStackLayout>
     </ScrollView>
 
